@@ -1,10 +1,10 @@
 {
-  "name": "npm-react-typescript-template",
+  "name": "react-amap-v2",
   "version": "1.0.0",
-  "description": "A template for publishing a React + TypeScript package to npm",
-  "author": "ovieokeh",
+  "description": "",
+  "author": "timeswind",
   "license": "Apache-2.0",
-  "repository": "ovieokeh/npm-react-typescript-template",
+  "repository": "timeswind/react-amap-v2",
   "main": "dist/index.js",
   "engines": {
     "node": ">=8",
@@ -12,24 +12,37 @@
   },
   "scripts": {
     "build": "rollup -c",
-    "start": "rollup -c -w"
+    "start": "rollup -c -w",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@amap/amap-jsapi-loader": "0.0.4"
+  },
   "peerDependencies": {
-    "react": ">= 16.8.0 < 2",
-    "react-dom": ">= 16.8.0 < 2"
+    "react": ">=16.13.1",
+    "react-dom": ">=16.13.1"
   },
   "devDependencies": {
-    "@types/react": "^16.3.13",
-    "@types/react-dom": "^16.0.5",
-    "babel-core": "^6.26.3",
+    "@amap/amap-jsapi-types": "0.0.4",
+    "@babel/core": "^7.11.4",
+    "@storybook/addon-actions": "^6.0.16",
+    "@storybook/addon-essentials": "^6.0.16",
+    "@storybook/addon-links": "^6.0.16",
+    "@storybook/react": "^6.0.16",
+    "@types/react": "^16.9.46",
+    "@types/react-dom": "^16.9.8",
+    "babel-loader": "^8.1.0",
     "babel-runtime": "^6.26.0",
+    "core-js": "^3.6.5",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "rollup": "^1.29.0",
+    "react-is": "^16.13.1",
+    "rollup": "^2.26.4",
     "rollup-plugin-sass": "^1.2.2",
-    "rollup-plugin-typescript2": "^0.25.3",
-    "typescript": "^2.8.3"
+    "rollup-plugin-typescript": "^1.0.1",
+    "tslib": "^2.0.1",
+    "typescript": "^4.0.2"
   },
   "files": [
     "dist"
